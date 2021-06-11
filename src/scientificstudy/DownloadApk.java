@@ -19,7 +19,10 @@ public class DownloadApk {
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle().length());
 		System.out.println(driver.getCurrentUrl().length());
-		driver.findElement(By.xpath("//span[text()='Download Now']")).click();
+		//driver.findElement(By.xpath("//span[text()='Download Now']")).click();
+		//driver.findElement(By.xpath(" (//div[@class='btn btn-medium btn-border c-primary btn-hover-shadow'])[1]")).click();
+		driver.findElement(By.xpath("(//div[@class='btn btn-medium btn-border c-primary btn-hover-shadow'])[2]")).click();
+		//driver.findElement(By.xpath("//a[text()='School Key : ']")).click();
 	}
 
 }
