@@ -25,6 +25,7 @@ public class AccademicModel {
 		driver.findElement(By.xpath("//input[@name='txtPassword']")).sendKeys("study2020");
 		driver.findElement(By.xpath("//button[@id='btnLogin']")).click();
 		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[text()=' Continue']")).click();
 		driver.findElement(By.xpath("//li[@id='academic']/a")).click();
 		driver.findElement(By.xpath("//ul[@id='divRecentlyUsedModule']/li/a")).click();
 		//driver.findElement(By.xpath("")).click();
@@ -68,6 +69,7 @@ public class AccademicModel {
 		
 		//for date selection mothod//
 		driver.findElement(By.xpath("//input[@name='txtDate']")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@class='form-control hasDatepicker']")).sendKeys("09-Jun-2021");
 		
 		driver.findElement(By.xpath("//textarea[@name='Homework']")).sendKeys("Physics class");

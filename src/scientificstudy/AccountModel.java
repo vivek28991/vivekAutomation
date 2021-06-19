@@ -26,9 +26,9 @@ public class AccountModel {
 		driver.findElement(By.xpath("//a[text()='             Accounts         ']")).click();
 		driver.findElement(By.xpath(" (//button[@class='btn btn-info dropdown-toggle'])[1]")).click();
 		driver.findElement(By.xpath("//a[text()='Stock Group']")).click();
-		//driver.findElement(By.xpath("//input[@id='txtCategoryName']")).sendKeys("DAV Public School");
-		//driver.findElement(By.xpath("//input[@id='txtDesc']")).sendKeys("school details");
-		//driver.findElement(By.xpath("//button[@class='btn btn-success btn-sm btn-level']")).click();
+		driver.findElement(By.xpath("//input[@id='txtCategoryName']")).sendKeys("DAV Public School");
+		driver.findElement(By.xpath("//input[@id='txtDesc']")).sendKeys("school details");
+		driver.findElement(By.xpath("//button[@class='btn btn-success btn-sm btn-level']")).click();
 		//driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-xs'])[5]")).click();
 		driver.findElement(By.xpath("(//button[@class='btn btn-danger btn-xs'])[5]")).click();
 		driver.findElement(By.xpath("//button[text()='OK']")).click();
@@ -41,6 +41,7 @@ public class AccountModel {
 		driver.findElement(By.xpath("//a[text()='Set Sale Price']")).click();
 		driver.findElement(By.xpath("//a[text()='Unit Of Measurement']")).click();
 		driver.findElement(By.xpath("")).click();*/
+		driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-xs'])[1]")).click();
 		
 		
 
