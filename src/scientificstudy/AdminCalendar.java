@@ -4,7 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class AdminCalendar {
 
@@ -31,6 +33,18 @@ public class AdminCalendar {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[text()='list week']")).click();
 		driver.findElement(By.xpath("//a[@class='btn-new btn-dark backbtn']")).click();
+		driver.findElement(By.xpath("(//div[@class='card_box text-center'])[2]")).click();
+		driver.findElement(By.xpath("//a[text()='Upload Documents']")).click();
+		WebElement Dropdnaudions = driver.findElement(By.xpath("(//select[@id='ddlAudience'])[1]"));
+		Select vl= new Select(Dropdnaudions);
+		vl.selectByVisibleText("School");
+		WebElement drodnType = driver.findElement(By.xpath("//select[@class='form-control ng-pristine ng-valid ng-touched']"));
+		Select vl1= new Select(drodnType);
+		vl1.selectByVisibleText("Private");
+		Thread.sleep(3000);
+		WebElement fileupload = driver.findElement(By.xpath("//input[@type='file']"));
+		fileupload.click();
+		fileupload.sendKeys("D:\\vivek\\cv\\SQA_Vivek kumar.doc"); 
 	}
 
 }
